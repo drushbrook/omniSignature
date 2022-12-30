@@ -1,3 +1,4 @@
+![](images/ahlsbanner.png)
 <h1>A-HLS Omni Signature Capture Documentation</h1>
 
 A simple OmniScript enabled LWC that allows for the capturing of a signature and then stores it as a base64 encoded attachment. 
