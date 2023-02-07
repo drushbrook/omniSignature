@@ -6,7 +6,7 @@
 
   
   @author Derek Cassese - dcassese@salesforce.com
-  @version 1.0
+  @version 2.0
  
   History
   =======
@@ -90,18 +90,6 @@ export default class OmniSignature extends OmniscriptBaseMixin(LightningElement)
             this.getPos(evt);
             this.draw();
         }
-    }
-    
-    handleTouchstart(evt) {
-        console.log("TOUCH START   ::" + evt)
-        mousePos = getTouchPos(sCanvas, evt);
-        var touch = evt.touches[0];
-        var me = new MouseEvent("mousedown", {
-          clientX: touch.clientX,
-          clientY: touch.clientY
-        });
-        this.dispatchEvent(me);
-         
     }
   
     getPos = (evt) => {
